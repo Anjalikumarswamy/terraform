@@ -1,0 +1,40 @@
+Terraform 
+
+	1. To create a resource group  in azure 
+	2. Using the bash command
+	Cd clouddrive
+	Mkdir terraformDeploy
+	Vi main.tf (to open an editor) 
+	:wq to escape 
+	Cat main.tf (to check the content of the file)
+	
+	3. Run terraform commands
+	Terraform init
+	Terraform plan
+	Terraform apply
+	Terraform destroy
+	
+	4. Content on main command 
+	resource "azurerm_resource_group" "tets" {
+	name = "TerraformDeploy"
+	location = "UK South"
+	
+	tags = {
+	environment = "TerraformDeployement"
+	  }
+	}
+	
+	
+	Terreaform.tfstate
+	{
+	  "version": 4,
+	  "terraform_version": "0.12.7",
+	  "serial": 3,
+	  "lineage": "288b9d76-336a-99fc-41d5-0c6c280a8be5",
+	  "outputs": {},
+	  "resources": []
+	}
+	
+Reference: 
+https://docs.microsoft.com/en-us/azure/terraform/terraform-slot-walkthru
+https://www.terraform.io/docs/providers/azurerm/r/resource_group.html
