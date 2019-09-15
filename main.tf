@@ -1,8 +1,6 @@
 	resource "azurerm_resource_group" "tets" {
 	name = "TerraformDeploy"
-	location = "UK South"
+	location = "South India"
 	
-	tags = {
-	environment = "TerraformDeployement"
-	  }
+
 }
